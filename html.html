@@ -1,0 +1,53 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Простая карточка:)</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contents">
+        <h1 class="title">iamartur</h1>
+        <div class="links">
+            <a href="https://vk.com/id182110192" target="_blank"><img src="vk.png" alt="VK Group" width="26" height="26"></a>
+            <a href="https://steamcommunity.com/profiles/76561199088379719" target="_blank"><img src="steam.png" alt="Steam" width="26" height="26"></a>   
+            <a href="https://vk.com/public182768793" target="_blank"><img src="group.png" alt="VK Group" width="26" height="26"></a>        
+            </div>
+        <div class="clock_time">
+            <div id="doc_time"></div>
+            <script>
+            function clock() {
+            var d = new Date();
+            var month_num = d.getMonth();
+            var day = d.getDate();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var s = d.getSeconds();
+
+            if (m < 10) {
+                m = '0' + m;
+            }
+            if (h < 10) {
+                h = '0' + h;
+            }
+            if (s < 10) {
+                s = '0' + s;
+            }
+            var myclock = document.getElementById('doc_time');
+            myclock.textContent = h + " : " + m + " : " + s;
+            myclock.innerText = h + " : " + m + " : " + s;
+            }
+            setInterval(clock, 1000);
+            </script>      
+            </div>
+
+    <div class="background">
+        <div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+    </div>
+
+</body>
+</html>
